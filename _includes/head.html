@@ -1,0 +1,211 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  {% assign lvl = page.url | append:'X' | split:'/' | size %}
+  {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/social_style.css">
+<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+  <style>
+  
+
+
+      .container{
+        width: 100%;
+        max-width: 1000px;
+        height: 300px;
+        margin-bottom: 25px;
+        overflow: hidden; 
+        border: 0px rgb(89,89,89) solid;
+
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100);
+        -moz-opacity: 0.7;
+        -khtml-opacity: 0.7;
+        opacity: 0.9;
+
+        
+        background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(75,75,75,0.79) 76%, rgba(99,99,99,0.79) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(76%,rgba(75,75,75,0.79)), color-stop(100%,rgba(99,99,99,0.79))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(75,75,75,0.79) 76%,rgba(99,99,99,0.79) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(75,75,75,0.79) 76%,rgba(99,99,99,0.79) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(75,75,75,0.79) 76%,rgba(99,99,99,0.79) 100%); /* IE10+ */
+        background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(75,75,75,0.79) 76%,rgba(99,99,99,0.79) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#c9636363',GradientType=1 ); /* IE6-9 */
+        text-shadow: 0px 0px 0px rgb(89,89,89);
+
+        -moz-box-shadow:  6px 3px 12px 7px rgb(0, 0, 0);
+        -webkit-box-shadow:  6px 3px 12px 7px rgb(0, 0, 0);
+        box-shadow:  6px 3px 12px 7px rgb(0, 0, 0);
+      }
+      
+
+      .sqrContainer{
+          position: relative;
+          width: 290px;
+          height: 290px;
+          overflow: hidden;
+
+      }
+
+      .sqrContainer img{
+          position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 100%;
+            width: auto;
+          -webkit-transform: translate(-50%,-50%);
+              -ms-transform: translate(-50%,-50%);
+                  transform: translate(-50%,-50%);
+      }
+
+      .sqrContainer img.portrait{
+          width: 100%;
+          height: auto;
+      }
+
+     
+
+      .left {
+        float: left;
+        width: 40%;
+        height: 100%;
+        text-align: center;
+        overflow: hidden;   
+      }
+
+      .right {
+        float: right;
+        width: 60%;
+      }
+
+      .image h3 { 
+          position: absolute;
+         top: 300px; 
+         left: 0; 
+         width: 100%; 
+      }
+
+      .image h3 span { 
+         color: #FACC2E; 
+         font: 'Alegreya Sans SC'; 
+         letter-spacing: 1px;  
+         background: rgb(0, 0, 0); /* fallback color */
+         background: rgba(0, 0, 0, 0.7);
+         padding: 10px; 
+      }
+
+      .right h3{
+          color: #FACC2E;
+          font:'Alegreya Sans SC';
+          font-weight: 900;
+          text-shadow:
+          3px 3px 2px #000,
+         -1px -1px 0 #000,  
+          1px -1px 0 #000,
+         -1px  1px 0 #000,
+          1px  1px 0 #000;
+      }
+
+       h4 { 
+         color: #FACC2E;
+          font:'Alegreya Sans SC';
+          font-weight: 900;
+          text-shadow:
+          3px 3px 2px #000,
+         -1px -1px 0 #000,  
+          1px -1px 0 #000,
+         -1px  1px 0 #000,
+          1px  1px 0 #000;
+      }
+
+
+      .right p{
+        color: #FACC2E;
+          font: bold 14px/30px Helvetica, Sans-Serif;
+          font-weight: 400;
+          text-shadow:
+          3px 3px 2px #000,
+         -1px -1px 0 #000,  
+          1px -1px 0 #000,
+         -1px  1px 0 #000,
+          1px  1px 0 #000;
+      }
+
+      .jumbotron{
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+        overflow: hidden;
+
+      }
+     
+     
+     .image{
+        position: relative;
+     }
+     .image img{
+        width: 100%;
+
+     }
+
+    .jumbotron img{
+        height: inherit;
+     }
+
+     .jumbotron h2{
+        margin-left: 25px;
+        color: #FACC2E;
+          font:'Times New Roman';
+          font-weight: 900;
+          text-shadow:
+          3px 3px 2px #000,
+         -1px -1px 0 #000,  
+          1px -1px 0 #000,
+         -1px  1px 0 #000,
+          1px  1px 0 #000;
+      }
+
+      .jumbotron h4 { 
+        font-size: 48px;
+        font-weight: bold;
+        font-family: 'Shift', sans-serif
+          text-shadow:
+          3px 3px 2px #000,
+         -1px -1px 0 #000,  
+          1px -1px 0 #000,
+         -1px  1px 0 #000,
+          1px  1px 0 #000;
+      }
+
+      .slick-prev:before{
+        color: #FACC2E;
+        font-size: 20px;
+      }
+      .slick-next:before {
+        color: #FACC2E;
+        font-size: 20px;
+      }
+
+      
+
+  </style>
+
+
+</head>

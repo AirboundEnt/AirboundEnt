@@ -1,0 +1,23 @@
+
+  {% for post in site.posts limit:10 offset:3 %}
+
+    <div class="container">
+          {% if post.image %}
+            <div class="left" >
+                <div class="sqrContainer">
+                  <a href="{{ BASE_PATH }}{{ post.url }}"><img src="{{ post.image }}" class="portrait" /></a>
+                </div>
+            </div>
+          {% else %}
+              <img src="" />
+          {% endif %}
+            <div class="right">
+                    <a href="{{ BASE_PATH }}{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                <p>{{ post.content | strip_html | truncatewords: 40 }}
+                </p>
+            </div>
+
+    </div>  
+  {% endfor %}
+
+

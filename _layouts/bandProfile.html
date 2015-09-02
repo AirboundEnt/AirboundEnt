@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navbar.html %}
+
+
+    <div class="col-md-10">
+        <div class="jumbotron">
+                <h2>{{ page.bandName }}</h2>
+                <div class="col-sm-8">
+                    <img src="{{ page.image }}" class="img-responsive" alt="...">
+                </div>
+                <div class="col-sm-4 pull-right" id="band-summary">
+                    <p>   {{ page.content }}
+                    </p>
+                </div>
+        </div>
+        <!-- END JumboTron -->
+          
+    </div>
+     
+      
+    
+      <div class="col-md-2">
+        <h4>See Our:</h4>
+        <div class="row">
+       <a href="{{ page.facebook }}" class="btn azm-social azm-size-64 azm-long-shadow  azm-facebook"><i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="row">
+          <a href="{{ page.twitter }}" class="btn azm-social azm-size-64 azm-long-shadow azm-twitter"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="row">
+          <a href="{{ page.instagram }}" class="btn azm-social azm-size-64 azm-long-shadow azm-instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="row">
+          <a href="{{ page.soundcloud }}" class="btn azm-social azm-size-64 azm-long-shadow azm-soundcloud"><i class="fa fa-soundcloud"></i></a>
+        </div>
+        <div class="row">
+          <a href="{{ page.youtube }}" class="btn azm-social azm-size-64 azm-long-shadow azm-youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+        <div class="row">
+          <a href="{{ page.bandcamp }}" class="btn azm-social azm-size-64 azm-long-shadow azm-bandcamp"><i class="fa fa-bandcamp"></i></a>
+        </div>
+        <div class="row">
+          <a href="{{ page.webkit }}" class="btn azm-social azm-size-64 azm-long-shadow azm-webKit"><i class="fa fa-webKit"></i></a>
+        </div>
+        <div class="row">
+          <a href="{{ page.pressKit }}" class="btn azm-social azm-size-64 azm-long-shadow azm-pressKit"><i class="fa fa-pressKit"></i></a>
+        </div>
+      </div>
+    
+  </body>
+
+</html>
