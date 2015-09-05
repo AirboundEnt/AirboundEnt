@@ -1,9 +1,0 @@
----
-layout: post
-title:  “Who want's some Trea?”
-date:   2015-08-18 00:11:00
-image: ../images/LandonPromo.jpg
----
-
-	Come get yourselve a dose of Trea Landon at Gnat's landing this week! 
-	Other dates are on the calendar, don't miss him.
