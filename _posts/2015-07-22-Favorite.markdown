@@ -2,7 +2,7 @@
 layout: post
 title:  All your favorite bands in one place!
 date:   2015-08-22 00:11:00
-image: ../images/PoorMansFancy.jpg
+image: {{ site.baseurl }}/images/PoorMansFancy.jpg
 ---
 
 	All your favorite bands in one place!
