@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  All your favorite bands in one place!
-date:   2015-08-22 00:11:00
-image: {{ site.url }}/images/PoorMansFancy.jpg
+date:   2015-08-21 00:11:00
+image: {{ site.url }}/images/theNorm.jpg
 ---
 
 	All your favorite bands in one place!
