@@ -2,7 +2,7 @@
 layout: post
 title:  Welcome to the Site!
 date:   2015-08-23 00:11:00
-image: {{ site.url }}/images/AirboundLOGO_Gray.bmp
+image: {{ site.url }}/images/theNorm.jpg
 ---
 
 	Welcome to the new face of Airbound Entertainment! AirboundEnt.com is here to bring you the latest, the greatest, and the very best of what the South-Easteren music scene has come to offer! 
