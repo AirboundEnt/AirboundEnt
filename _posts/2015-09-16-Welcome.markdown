@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Welcome to the Site!
-date:   2015-08-23 00:11:00
+date:   2015-09-16 00:11:00
 image: {{ site.url }}/images/Welcome.jpg
 ---
 
