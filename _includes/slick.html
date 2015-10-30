@@ -1,10 +1,10 @@
 <div>
   
-  <div class="autoplay" style="height:450px; width:95%; margin-left:2.5%;">
+  <div class="autoplay" style="height:400px; width:95%; margin-left:2.5%;">
     {% for post in site.posts limit:3 %}
 	       
           {% if post.image %}
-          <div class="image" style="height:450px;">
+          <div class="image" style="height:400px;">
 	           <a href="{{ BASE_PATH }}{{ post.url }}"><img src="{{ post.image }}" /></a>
               <a href="{{ BASE_PATH }}{{ post.url }}"><h3><span>{{ post.title }}</span></h3></a>
           </div>
@@ -24,7 +24,7 @@
       	$('.autoplay').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
 });
     });
