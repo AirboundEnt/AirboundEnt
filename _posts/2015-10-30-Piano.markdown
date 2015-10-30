@@ -2,7 +2,7 @@
 layout: post
 title:  Piano.
 date:   2015-10-30 00:11:00
-image: /images/artist/PIANOhighrezCOLORlive.jpg
+image: /images/artists/PIANOhighrezCOLORlive.jpg
 ---
 
 	
