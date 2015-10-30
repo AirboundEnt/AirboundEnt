@@ -3,6 +3,7 @@ layout: post
 title:  BYOG
 date:   2015-10-28 00:11:00
 image: /artists/BYOG/BYOGpic.jpg
+link: http://www.airboundent.com/BYOG.html
 ---
 
 	
