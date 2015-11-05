@@ -18,7 +18,7 @@
                     <p>   {{ page.content | strip_html | truncate: 540 }}
                     </p>
                 </div>
-                <p>{{ page.content | slice: -540, 10000 }}</p>
+                <p>{{ page.content | slice: 540, 10000 }}</p>
         </div>
         <!-- END JumboTron -->
           
