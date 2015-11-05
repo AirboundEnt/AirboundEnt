@@ -15,10 +15,10 @@
                     <img src="{{ page.image }}" class="img-responsive" alt="...">
                 </div>
                 <div class="col-sm-4 pull-right" id="band-summary">
-                    <p>   {{ post.content | strip_html | truncate: 540 }}
+                    <p>   {{ page.content | strip_html | truncate: 540 }}
                     </p>
                 </div>
-                <p>{{ post.content | slice: -540, 10000 }}</p>
+                <p>{{ page.content | slice: -540, 10000 }}</p>
         </div>
         <!-- END JumboTron -->
           
