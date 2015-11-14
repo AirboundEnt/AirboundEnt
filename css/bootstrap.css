@@ -15,8 +15,8 @@ html {
 }
 body {
 	/*background-color: #000000 !important;*/
-  background: url('../images/dots.jpg');
-     background-size: 550px 250px;
+  background: url('../images/criscross.jpg');
+     background-size: 1600px 1600px;
      background-repeat: repeat;
      background-attachment: fixed;
     display: compact;
