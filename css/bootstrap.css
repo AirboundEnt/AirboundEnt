@@ -16,7 +16,7 @@ html {
 body {
 	/*background-color: #000000 !important;*/
   background: url('../images/dots.jpg');
-     background-size: 250px 550px;
+     background-size: 550px 250px;
      background-repeat: repeat;
      background-attachment: fixed;
     display: compact;
