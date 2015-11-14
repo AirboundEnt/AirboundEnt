@@ -15,7 +15,7 @@ html {
 }
 body {
 	/*background-color: #000000 !important;*/
-  background: url('../images/black-carpet.png');
+  background: url('../images/dots.jpg');
      background-size: 400px 400px;
      background-repeat: repeat;
      background-attachment: fixed;
@@ -5147,7 +5147,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73494949', e
   font-size: 17px;
   font-weight: 400;
   color: #FACC2E;
-  font-family: 'Times New Roman', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-shadow:
     3px 3px 2px #000,
    -1px -1px 0 #000,  
