@@ -227,7 +227,7 @@
       }
 
       .nav-wrapper {
-          position: absolute;
+          position: relative;
           top:0;
           min-height: 130px !important;
           background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(46,46,46,1)), color-stop(68%,rgba(54,54,54,0.8)), color-stop(100%,rgba(58,58,58,0.87)));
@@ -250,7 +250,8 @@
           background: -o-linear-gradient(left, rgba(46,46,46,1) 0%,rgba(54,54,54,0.8) 68%,rgba(58,58,58,0.87) 100%);
           background: -ms-linear-gradient(left, rgba(46,46,46,1) 0%,rgba(54,54,54,0.8) 68%,rgba(58,58,58,0.87) 100%);
           background: linear-gradient(to right, rgba(46,46,46,1) 0%,rgba(54,54,54,0.8) 68%,rgba(58,58,58,0.87) 100%);  
-          z-index: 9999;  
+          z-index: 9999; 
+          top: 0 !important; 
       }
   </style>
 
