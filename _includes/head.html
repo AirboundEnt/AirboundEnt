@@ -25,7 +25,9 @@
 
   <style>
   
-
+      body {
+        position: relative
+      }
 
       .container{
         width: 100%;
@@ -222,6 +224,33 @@
 
       .dropdown-backdrop {
         position: static;
+      }
+
+      .nav-wrapper {
+          position: absolute;
+          top:0;
+          min-height: 130px !important;
+          background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(46,46,46,1)), color-stop(68%,rgba(54,54,54,0.8)), color-stop(100%,rgba(58,58,58,0.87)));
+          background: -webkit-linear-gradient(left, rgba(46,46,46,1) 0%,rgba(54,54,54,0.8) 68%,rgba(58,58,58,0.87) 100%);
+          background: -o-linear-gradient(left, rgba(46,46,46,1) 0%,rgba(54,54,54,0.8) 68%,rgba(58,58,58,0.87) 100%);
+          background: -ms-linear-gradient(left, rgba(46,46,46,1) 0%,rgba(54,54,54,0.8) 68%,rgba(58,58,58,0.87) 100%);
+          background: linear-gradient(to right, rgba(46,46,46,1) 0%,rgba(54,54,54,0.8) 68%,rgba(58,58,58,0.87) 100%);      
+        }
+
+      .nav-wrapper nav-default {
+        position: relative;
+        top: 0;
+        width:100%;
+        z-index: 9998;
+      }
+
+      .nav-collapse ul {
+          background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(46,46,46,1)), color-stop(68%,rgba(54,54,54,0.8)), color-stop(100%,rgba(58,58,58,0.87)));
+          background: -webkit-linear-gradient(left, rgba(46,46,46,1) 0%,rgba(54,54,54,0.8) 68%,rgba(58,58,58,0.87) 100%);
+          background: -o-linear-gradient(left, rgba(46,46,46,1) 0%,rgba(54,54,54,0.8) 68%,rgba(58,58,58,0.87) 100%);
+          background: -ms-linear-gradient(left, rgba(46,46,46,1) 0%,rgba(54,54,54,0.8) 68%,rgba(58,58,58,0.87) 100%);
+          background: linear-gradient(to right, rgba(46,46,46,1) 0%,rgba(54,54,54,0.8) 68%,rgba(58,58,58,0.87) 100%);  
+          z-index: 9999;  
       }
   </style>
 
